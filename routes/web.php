@@ -37,6 +37,8 @@ Route::get('goods/test1','GoodsController@test1')->middleware('viewNum');//统�
 Route::get('test/test2','TestController@test2');//加密测试
 Route::post('test/dec','TestController@dec');//接收加密信息，并解密
 Route::post('test/enc','TestController@enc');//想www发送信息
+Route::get('test/header','TestController@headers');//header传输测试
+
 
 
 

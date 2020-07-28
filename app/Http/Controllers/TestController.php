@@ -230,6 +230,16 @@ class TestController extends Controller
         $b64_info=base64_encode($crypted);
         echo $b64_info;
     }
+    /*
+     * headers传参测试
+     * */
+    public function headers(){
+        $data=$_SERVER;
+        dd($data);
+    }
+
+
+
 
 
 }
