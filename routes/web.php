@@ -23,7 +23,7 @@ Route::get('/wx/curl','TestController@getCurltoken');
 Route::get('/wx/guzzle','TestController@getGuzzleToken');
 Route::get('accesstoken','TestController@access_token');//自己设置的access_token
 Route::get('/userinfo','TestController@getuserinfo');
-Route::post('login','TestController@login');
+Route::post('login','LoginController@login');
 Route::post('sign','TestController@sign');
 Route::get('user/info','TestController@userInfo');
 Route::get('hash/hash1','HashController@hash1');
@@ -38,6 +38,8 @@ Route::get('test/test2','TestController@test2');//加密测试
 Route::post('test/dec','TestController@dec');//接收加密信息，并解密
 Route::post('test/enc','TestController@enc');//想www发送信息
 Route::get('test/header','TestController@headers');//header传输测试
+Route::get('test/alipay','TestController@alipay');//支付宝支付
+
 
 
 
